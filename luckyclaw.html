@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lucky Claw — Naomi Peng</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body data-page="luckyclaw">
+	<canvas class="nebula-layer" aria-hidden="true"></canvas>
+
+	<div class="lc-shell">
+
+		<!-- Top nav — matches workslib style (absolute top-right) -->
+		<header class="site-topbar">
+			<div class="toolbar">
+				<button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch language">中文 / EN</button>
+			</div>
+		</header>
+
+		<!-- Hero banner -->
+		<div class="lc-hero">
+			<img src="./pics/LC loading.png" alt="Lucky Claw" class="lc-hero-img" />
+		</div>
+
+		<!-- Main content -->
+		<div class="lc-content">
+
+			<!-- Left: description -->
+			<main class="lc-main">
+				<section class="lc-about">
+					<h2 class="lc-section-title" data-lang="en">About This Game</h2>
+					<h2 class="lc-section-title" data-lang="zh">关于这款游戏</h2>
+
+					<p class="lc-desc" data-lang="en">Lucky Claw is a simple and easy-to-play claw machine game with a retro 80s arcade look, mixed with a nostalgic and slightly cute pixel style.</p>
+					<p class="lc-desc" data-lang="zh">Lucky Claw 是一款简单好上手的抓娃娃小游戏，画面采用 80 年代复古街机风格，带一点怀旧又有点可爱的像素感。</p>
+
+					<p class="lc-desc" data-lang="en">The gameplay is inspired by those real-life claw machines that are both addictive and frustrating — the prize always looks like it is about to be yours, and then somehow slips away at the last second. Players need to catch as many dolls as possible within the time limit, relying on quick reactions, good timing, and just a little bit of luck.</p>
+					<p class="lc-desc" data-lang="zh">它的玩法灵感来自现实里那些让人又爱又恨的抓娃娃机——看起来好像马上就能抓到，但下一秒娃娃就从爪子里滑走。玩家需要在限定时间内尽可能抓到更多娃娃，挑战自己的手速、判断力，还有一点点运气。</p>
+
+					<p class="lc-desc" data-lang="en">The game also supports a physical arcade joystick and button, which makes the experience feel much closer to a real arcade machine. Of course, you can still play without the controller, but you might miss that satisfying feeling of slamming the button at the perfect moment.</p>
+					<p class="lc-desc" data-lang="zh">游戏支持实体街机摇杆和按钮操作，这会让体验更像真正的街机游戏。当然，如果你手边没有摇杆和按钮，也完全可以玩，只是可能会少一点"啪一下按下去"的快乐。</p>
+				</section>
+			</main>
+
+			<!-- Right: sidebar -->
+			<aside class="lc-sidebar">
+
+				<div class="lc-sidebar-cover">
+					<img src="./pics/LC2.png" alt="Lucky Claw Cover" />
+				</div>
+
+				<a class="lc-play-btn" href="https://www.bilibili.com/video/BV1i7RdBDEwC/?share_source=copy_web&vd_source=0193658c3d7cae08d3b624764144abad" target="_blank">
+					<span data-lang="en">▶ Game Log</span>
+					<span data-lang="zh">▶ 游戏日志</span>
+				</a>
+
+				<div class="lc-tags">
+					<span class="lc-tag">#游戏设计</span>
+					<span class="lc-tag">#物理交互</span>
+					<span class="lc-tag">#Unity</span>
+					<span class="lc-tag">#PixelArt</span>
+					<span class="lc-tag">#Arcade</span>
+				</div>
+
+			</aside>
+		</div>
+
+		<!-- Navigation controls — same style as workslib carousel -->
+		<div class="carousel-controls lc-nav-controls">
+			<button class="carousel-btn prev-btn" onclick="location.href='workslib.html?work=7'">←</button>
+			<input type="range" class="carousel-slider" min="0" max="26" value="26" disabled>
+			<button class="carousel-btn next-btn" onclick="location.href='workslib.html?work=1'">→</button>
+		</div>
+
+		<footer class="gallery-footer-nav">
+			<a href="./works.html"><span data-lang="en">Back</span><span data-lang="zh">返回</span></a>
+			<a href="./about.html"><span data-lang="en">About</span><span data-lang="zh">关于</span></a>
+		</footer>
+
+	</div>
+
+	<script src="./script.js"></script>
+</body>
+</html>

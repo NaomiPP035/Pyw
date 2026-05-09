@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem \"E:\\\\GitHub\\\\Pyw\\\\pics\\\\\" | Where-Object { $_.Name -match \"LC|lucky|claw\" })",
+      "Bash(python3 -c ' *)"
+    ]
+  }
+}

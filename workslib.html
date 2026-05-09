@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio Gallery - Naomi Peng</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body data-page="workslib">
+	<canvas class="nebula-layer"></canvas>
+
+	<div class="page-shell">
+		<header class="site-topbar">
+			<div class="toolbar">
+				<button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch language">中文 / EN</button>
+			</div>
+		</header>
+
+		<main class="gallery-main">
+			<aside class="portfolio-info">
+				<p class="portfolio-tech" id="work-title">Crosswork</p>
+				<p class="portfolio-desc" id="work-tags">#Service Design · #UX Design · #Aging Population</p>
+			</aside>
+
+			<div class="materiality-wrapper">
+				<section class="materiality-section" id="materiality-section" hidden></section>
+				<div class="materiality-preview">
+					<img class="materiality-preview-img" src="./videos/A1.gif" alt="Preview" />
+				</div>
+			</div>
+
+			<section class="carousel-section">
+				<div class="carousel-wrapper">
+					<div class="carousel-container" id="carousel">
+						<img src="./pics/Portfolio_clearer_页面_01.jpg" alt="Portfolio 1" class="carousel-img">
+						<img src="./pics/Portfolio_clearer_页面_02.jpg" alt="Portfolio 2" class="carousel-img">
+						<img src="./pics/Portfolio_clearer_页面_03.jpg" alt="Portfolio 3" class="carousel-img">
+						<img src="./pics/Portfolio_clearer_页面_04.jpg" alt="Portfolio 4" class="carousel-img">
+						<img src="./pics/Portfolio_clearer_页面_05.jpg" alt="Portfolio 5" class="carousel-img">
+						<img src="./pics/Portfolio_clearer_页面_06.jpg" alt="Portfolio 6" class="carousel-img">
+						<img src="./pics/Portfolio_clearer_页面_07.jpg" alt="Portfolio 7" class="carousel-img">
+						<img src="./pics/Portfolio_clearer_页面_08.jpg" alt="Portfolio 8" class="carousel-img">
+						<img src="./pics/Portfolio_clearer_页面_09.jpg" alt="Portfolio 9" class="carousel-img">
+						<img src="./pics/Portfolio_clearer_页面_10.jpg" alt="Portfolio 10" class="carousel-img">
+						<img src="./pics/Portfolio_clearer_页面_11.jpg" alt="Portfolio 11" class="carousel-img">
+						<img src="./pics/Portfolio_clearer_页面_12.jpg" alt="Portfolio 12" class="carousel-img">
+						<img src="./pics/Portfolio_clearer_页面_13.jpg" alt="Portfolio 13" class="carousel-img">
+						<img src="./pics/Portfolio_clearer_页面_14.jpg" alt="Portfolio 14" class="carousel-img">
+						<img src="./pics/Portfolio_clearer_页面_15.jpg" alt="Portfolio 15" class="carousel-img">
+						<img src="./pics/Portfolio_clearer_页面_16.jpg" alt="Portfolio 16" class="carousel-img">
+						<img src="./pics/Portfolio_clearer_页面_17.jpg" alt="Portfolio 17" class="carousel-img">
+						<img src="./pics/Portfolio_clearer_页面_18.jpg" alt="Portfolio 18" class="carousel-img">
+						<img src="./pics/Portfolio_clearer_页面_19.jpg" alt="Portfolio 19" class="carousel-img">
+						<img src="./pics/Portfolio_clearer_页面_20.jpg" alt="Portfolio 20" class="carousel-img">
+						<img src="./pics/Portfolio_clearer_页面_21.jpg" alt="Portfolio 21" class="carousel-img">
+						<img src="./pics/Portfolio_clearer_页面_22.jpg" alt="Portfolio 22" class="carousel-img">
+						<img src="./pics/Portfolio_clearer_页面_23.jpg" alt="Portfolio 23" class="carousel-img">
+						<img src="./pics/Portfolio_clearer_页面_24.jpg" alt="Portfolio 24" class="carousel-img">
+						<img src="./pics/Yousee.jpg" alt="You See" class="carousel-img yousee-carousel-img">
+					</div>
+				</div>
+
+				<!-- Work 6 two-column layout -->
+				<div class="yousee-layout" id="yousee-layout" hidden>
+					<div class="yousee-left">
+						<img src="./pics/Yousee.jpg" alt="You See" class="yousee-left-img" />
+					</div>
+					<div class="yousee-right">
+						<a class="yousee-flip-card" href="https://www.bilibili.com/video/BV1XpRdBjEhX/?share_source=copy_web&vd_source=0193658c3d7cae08d3b624764144abad" target="_blank" aria-label="Click to watch">
+							<div class="yousee-flip-inner">
+								<div class="yousee-flip-face yousee-flip-front">
+									<img src="./pics/Yousee2.png" alt="You See 2" />
+								</div>
+								<div class="yousee-flip-face yousee-flip-back">
+									<span class="yousee-flip-label" id="yousee-flip-label">点击观看</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+			<!-- Work 7 two-column layout -->
+				<div class="afterwords-layout" id="afterwords-layout" hidden>
+					<div class="afterwords-left">
+						<div class="afterwords-card">
+							<p class="afterwords-desc" id="afterwords-desc-text"></p>
+							<a class="afterwords-btn" href="https://www.bilibili.com/video/BV1xoRRBNEns/?share_source=copy_web&vd_source=0193658c3d7cae08d3b624764144abad" target="_blank">
+								<span data-lang="en">click to watch</span>
+								<span data-lang="zh">点击观看</span>
+							</a>
+						</div>
+					</div>
+					<div class="afterwords-right">
+						<img src="./pics/afw1.png" alt="Afterwords" class="afterwords-img" />
+					</div>
+				</div>
+
+			<!-- Work 8 Lucky Claw layout -->
+				<div class="lc-layout" id="lc-layout" hidden>
+					<div class="lc-layout-hero" id="lc-hero">
+						<div class="lc-slideshow" id="lc-slideshow">
+							<img src="./pics/LC3.png" alt="Lucky Claw 3" class="lc-slide active" data-index="0" />
+							<img src="./pics/LC4.png" alt="Lucky Claw 4" class="lc-slide" data-index="1" />
+						</div>
+						<div class="lc-dots" id="lc-dots">
+							<button class="lc-dot active" data-dot="0"></button>
+							<button class="lc-dot" data-dot="1"></button>
+						</div>
+					</div>
+					<div class="lc-layout-body">
+						<div class="lc-layout-main">
+							<h2 class="lc-section-title" data-lang="zh">关于这款游戏</h2>
+							<h2 class="lc-section-title" data-lang="en">About This Game</h2>
+							<div class="lc-layout-desc" id="lc-layout-desc"></div>
+						</div>
+						<div class="lc-layout-sidebar">
+							<img src="./pics/LC2.png" alt="Lucky Claw" class="lc-layout-cover" />
+							<a class="lc-play-btn" href="https://www.bilibili.com/video/BV1i7RdBDEwC/?share_source=copy_web&vd_source=0193658c3d7cae08d3b624764144abad" target="_blank">
+								<span data-lang="zh">▶ 游戏日志</span>
+								<span data-lang="en">▶ Game Log</span>
+							</a>
+							<div class="lc-tags">
+								<span class="lc-tag">#游戏设计</span>
+								<span class="lc-tag">#物理交互</span>
+								<span class="lc-tag">#Unity</span>
+								<span class="lc-tag">#PixelArt</span>
+								<span class="lc-tag">#Arcade</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="watch-btn-container" id="watch-btn-container" hidden>
+					<a href="https://www.bilibili.com/video/BV1XpRdBjEhX/?share_source=copy_web&vd_source=0193658c3d7cae08d3b624764144abad" class="watch-btn" id="watch-btn" target="_blank" data-lang-watch>点击观看</a>
+				</div>
+
+				<p class="carousel-note" id="work-caption">Crosswork is a service system designed for construction workers. It combines a smart helmet, a mobile app, and training support to help workers stay safe, learn on site, record experience, and build a clearer career path.</p>
+
+				<div class="carousel-controls">
+					<button class="carousel-btn prev-btn" id="prev-btn">←</button>
+				<input type="range" class="carousel-slider" id="carousel-slider" min="0" max="27" value="0">
+				<button class="carousel-btn next-btn" id="next-btn">→</button>
+			</div>
+		</section>
+
+		<section class="yousee-section" id="yousee-section" hidden>
+			<div class="yousee-content">
+				<img class="yousee-cover" src="./pics/Yousee.jpg" alt="You See" />
+				<p class="yousee-description" id="yousee-description"></p>
+				<div class="yousee-link-container" id="yousee-link-container">
+					<a href="#" class="yousee-link" target="_blank">Visit Project</a>
+				</div>
+			</div>
+		</section>
+
+		<footer class="gallery-footer-nav">
+			<a href="./works.html"><span data-lang="en">Back</span><span data-lang="zh">返回</span></a>
+			<a href="./about.html"><span data-lang="en">About</span><span data-lang="zh">关于</span></a>
+		</footer>
+	</div>
+
+	<script src="./script.js"></script>
+	<script>
+		const workTitle = document.getElementById('work-title');
+		const workTags = document.getElementById('work-tags');
+		const workCaption = document.getElementById('work-caption');
+		const carousel = document.getElementById('carousel');
+		const slider = document.getElementById('carousel-slider');
+		const prevBtn = document.getElementById('prev-btn');
+		const nextBtn = document.getElementById('next-btn');
+		const carouselSection = document.querySelector('.carousel-section');
+		const materialitySection = document.getElementById('materiality-section');
+		const youseeSection = document.getElementById('yousee-section');
+		const youseeDescription = document.getElementById('yousee-description');
+		const youseeLinkContainer = document.getElementById('yousee-link-container');
+		const watchBtnContainer = document.getElementById('watch-btn-container');
+		const watchBtn = document.getElementById('watch-btn');
+		const youseeLayout = document.getElementById('yousee-layout');
+		const youseeFlipLabel = document.getElementById('yousee-flip-label');
+		const afterwordsLayout = document.getElementById('afterwords-layout');
+		const afterwordsDescText = document.getElementById('afterwords-desc-text');
+		const lcLayout = document.getElementById('lc-layout');
+		const lcLayoutDesc = document.getElementById('lc-layout-desc');
+		const images = document.querySelectorAll('.carousel-img');
+		const query = new URLSearchParams(window.location.search);
+		const initialWork = Math.max(1, Math.min(8, parseInt(query.get('work') || '1', 10) || 1));
+		const totalImages = images.length;
+		let currentPosition = initialWork === 5 ? 24 : (initialWork === 6 ? 25 : (initialWork === 7 ? 26 : (initialWork === 8 ? 27 : (initialWork - 1) * 6)));
+		let currentGroup = initialWork;
+		let currentIndex = Math.min(currentPosition, totalImages - 1);
+		const getGroupFromPosition = (position) => (position === 27 ? 8 : (position === 26 ? 7 : (position === 25 ? 6 : (position >= 24 ? 5 : Math.floor(position / 6) + 1))));
+		const workData = {
+			1: {
+				en: {
+					title: 'Crosswork',
+					tags: '#Service Design · #UX Design · #Aging Population',
+					description: 'This project focuses on aging construction workers, skill gaps, and workplace safety. Starting from industry research and existing solutions, I found that many current tools solve isolated problems, but do not really support workers’ long-term growth.'
+				},
+				zh: {
+					title: '筑路者',
+					tags: '#服务设计 · #UX设计 · #老龄人口',
+					description: '这个项目关注建筑工人的年龄增长、技能断层和职业安全问题。我从行业现状、工人处境和现有解决方案出发，发现很多工具只解决单一问题，却没有真正帮助工人长期成长。'
+				}
+			},
+			2: {
+				en: {
+					title: 'Wetland',
+					tags: '#System Design · #Urban Design · #Sustainable Design',
+					description: 'This page analyzes current wetland issues, including water pollution, ecological decline, and limited public participation. I also mapped the water purification process and user needs to build a foundation for the design.'
+				},
+				zh: {
+					title: '城市湿地循环',
+					tags: '#系统设计 · #城市设计 · #可持续设计',
+					description: '这一页分析了现有湿地的问题，包括水质污染、生态退化和公众参与不足。我也整理了水净化流程和相关人群需求，为后续设计建立基础。'
+				}
+			},
+			3: {
+				en: {
+					title: 'Family',
+					tags: '#Product Design · #Service Design · #Artificial Intelligence',
+					description: 'Through interviews and shadowing, I learned about workers’ real struggles in work, learning, and career development. Their career paths are not linear, but shaped by experience, skill training, job changes, and family pressure.'
+				},
+				zh: {
+					title: '孕期家庭陪伴系统',
+					tags: '#产品设计 · #服务设计 · #AI智能',
+					description: '通过访谈和跟随观察，我了解了不同工人在工作、学习和晋升中的真实困难。工人的职业路径并不是线性的，而是在经验积累、技能学习、岗位转换和家庭压力之间不断变化。'
+				}
+			},
+			4: {
+				en: {
+					title: 'Bias & Bug',
+					tags: '#Artificial Intelligence · #Experimental Website',
+					description: 'This page looks deeper into workers’ career stages and learning needs. Younger, mid-career, and older workers face different challenges, so the platform needs to support skill learning, knowledge sharing, and career transition.'
+				},
+				zh: {
+					title: '偏见与虫',
+					tags: '#人工智能 · #实验性网页',
+					description: '这一页进一步分析了工人的成长阶段和学习需求。年轻工人、中年工人和年长工人面对的问题不同，所以平台需要同时支持技能学习、经验传承和职业转型。'
+				}
+			},
+			5: {
+				en: {
+					title: 'Digital Materiality',
+					tags: '#TouchDesigner · #Generative Visuals · #Motion Graphics',
+					description: 'Digital Materiality is a real-time visual experiment created with TouchDesigner. Through particles, noise, and audio-reactive motion, it explores how digital images can create a fluid sense of materiality.'
+				},
+				zh: {
+					title: '数字质地',
+					tags: '#TouchDesigner · #生成视觉 · #动态图形',
+					description: 'Digital Materiality 是一个基于 TouchDesigner 的实时视觉实验。作品通过粒子、噪声和声音反应，探索数字图像如何呈现出流动的材质感。'
+				}
+			},
+			6: {
+				en: {
+					title: 'You See',
+					tags: '#Interactive Installation · #Machine vision · #Presence and Gaze',
+					description: 'You See is a generative system that responds to human presence and gaze as a form of pressure rather than input to be recognized. Instead of identifying or stabilizing what it sees, the machine becomes increasingly unstable as someone approaches, lingers, or looks more directly. Distant or brief encounters leave subtle traces, while sustained attention produces visible distortion. Through this, the work reframes sensing as an expressive process, where presence does not resolve into clarity, but actively shapes and transforms the system over time.'
+				},
+				zh: {
+					title: '你看',
+					tags: '#互动装置 · #机器视觉 · #存在感与注视',
+					description: 'You See 是一个生成系统，它将人的存在和注视视为一种压力而非待识别的输入。这个系统不会识别或稳定它所看到的东西，相反，当有人接近、逗留或更直接地看着它时，机器变得越来越不稳定。远处或短暂的接触留下微妙的痕迹，而持续的注意会产生明显的扭曲。通过这样做，这个作品重新框架化了感知作为一个表达过程，其中存在不会解决为清晰，而是积极地随时间改变和转变系统。'
+				}
+			},
+			7: {
+				en: {
+					title: 'AFTERWORDS',
+					tags: '#Voice Interaction · #Glitch Aesthetics · #Algorithmic Bias',
+					description: 'Afterwords is a voice-interaction system built with the Web Speech API. It listens to what users say, but instead of reflecting their words exactly like a mirror, it turns language into errors, noise, and reorganized sentences. Through this process of "listening, misreading, and rewriting," the project shows how human expression can be filtered, compressed, and reinterpreted by machine systems. It asks what happens when the machine\'s version appears clearer and more complete, while the original human intention is gradually covered over.'
+				},
+				zh: {
+					title: '余言',
+					tags: '#声音互动 · #故障美学 · #算法偏见',
+					description: '《余言》是一个基于 Web Speech API 的声音互动系统。它会聆听用户说出的话，但不会像镜子一样准确复述，而是把语言转化为错误、噪声和被重新组织的句子。作品通过这种"听见—误读—改写"的过程，呈现人类表达如何在机器系统中被过滤、压缩和重新解释。它想讨论的是：当机器输出的版本看起来更清楚、更完整时，原本属于人的意图反而可能被覆盖。'
+				}
+			},
+			8: {
+				en: {
+					title: 'Lucky Claw',
+					tags: '#Game Design · #Physical Interaction · #Unity',
+					descParts: [
+						'Lucky Claw is a simple and easy-to-play claw machine game with a retro 80s arcade look, mixed with a nostalgic and slightly cute pixel style.',
+						'The gameplay is inspired by those real-life claw machines that are both addictive and frustrating — the prize always looks like it is about to be yours, and then somehow slips away at the last second. Players need to catch as many dolls as possible within the time limit, relying on quick reactions, good timing, and just a little bit of luck.',
+						'The game also supports a physical arcade joystick and button, which makes the experience feel much closer to a real arcade machine. Of course, you can still play without the controller, but you might miss that satisfying feeling of slamming the button at the perfect moment.'
+					]
+				},
+				zh: {
+					title: '幸运爪',
+					tags: '#游戏设计 · #物理交互 · #Unity',
+					descParts: [
+						'Lucky Claw 是一款简单好上手的抓娃娃小游戏，画面采用 80 年代复古街机风格，带一点怀旧又有点可爱的像素感。',
+						'它的玩法灵感来自现实里那些让人又爱又恨的抓娃娃机——看起来好像马上就能抓到，但下一秒娃娃就从爪子里滑走。玩家需要在限定时间内尽可能抓到更多娃娃，挑战自己的手速、判断力，还有一点点运气。',
+						'游戏支持实体街机摇杆和按钮操作，这会让体验更像真正的街机游戏。当然，如果你手边没有摇杆和按钮，也完全可以玩，只是可能会少一点"啪一下按下去"的快乐。'
+					]
+				}
+			}
+		};
+
+		const materialitySeries = [
+			{ letter: 'A', name: 'Neon', items: ['A1', 'A2', 'A3'] },
+			{ letter: 'B', name: 'Floating', items: ['B1', 'B2', 'B3'] },
+			{ letter: 'C', name: 'Waving', items: ['C1', 'C2'] },
+			{ letter: 'D', name: 'Particles', items: ['D1', 'D2', 'D3', 'D4', 'D5'] }
+		];
+
+		const getLanguage = () => (document.documentElement.getAttribute('data-lang') === 'zh' ? 'zh' : 'en');
+
+		const pageDescriptions = {
+			1: [
+				{
+					en: 'This project focuses on aging construction workers, skill gaps, and workplace safety. Starting from industry research and existing solutions, I found that many current tools solve isolated problems, but do not really support workers’ long-term growth.',
+					zh: '这个项目关注建筑工人的年龄增长、技能断层和职业安全问题。我从行业现状、工人处境和现有解决方案出发，发现很多工具只解决单一问题，却没有真正帮助工人长期成长。'
+				},
+				{
+					en: 'Through interviews and shadowing, I learned about workers’ real struggles in work, learning, and career development. Their career paths are not linear, but shaped by experience, skill training, job changes, and family pressure.',
+					zh: '通过访谈和跟随观察，我了解了不同工人在工作、学习和晋升中的真实困难。工人的职业路径并不是线性的，而是在经验积累、技能学习、岗位转换和家庭压力之间不断变化。'
+				},
+				{
+					en: 'This page looks deeper into workers’ career stages and learning needs. Younger, mid-career, and older workers face different challenges, so the platform needs to support skill learning, knowledge sharing, and career transition.',
+					zh: '这一页进一步分析了工人的成长阶段和学习需求。年轻工人、中年工人和年长工人面对的问题不同，所以平台需要同时支持技能学习、经验传承和职业转型。'
+				},
+				{
+					en: 'The design process develops through user needs, scenarios, and storyboards. I broke learning into smaller steps, allowing workers to access support on-site, during breaks, or when they face specific problems.',
+					zh: '设计过程从用户需求、使用场景和故事板展开。我把工人的日常学习拆成更轻量的步骤，让他们可以在工作现场、休息时间或遇到问题时获得帮助。'
+				},
+				{
+					en: 'The service system map shows how the platform connects workers, companies, training resources, and industry organizations. It is not just an app, but a system built around learning, certification, support, and career growth.',
+					zh: '服务系统图展示了平台如何连接工人、企业、培训资源和行业组织。整个服务不只是一个 app，而是一个围绕学习、认证、支持和职业成长的系统。'
+				},
+				{
+					en: 'The final app design includes learning paths, skill records, course recommendations, and career support features. The yellow and green visual language keeps the interface clear and friendly while connecting back to the construction-site context.',
+					zh: '最终的 app 设计包含学习路径、技能记录、课程推荐和职业支持功能。视觉上使用黄色和绿色，让界面保持清晰、友好，也呼应建筑工地的视觉语言。'
+				}
+			],
+			2: [
+				{
+					en: 'This project begins with the ecological value of urban wetlands and explores how wetlands can be reimagined within urban development. It focuses on the relationships between water cycles, plants, communities, and public space.',
+					zh: '这个项目从城市湿地的生态价值出发，研究湿地如何在城市更新中被重新理解。项目关注水循环、植物、社区和公共空间之间的关系。'
+				},
+				{
+					en: 'This page analyzes current wetland issues, including water pollution, ecological decline, and limited public participation. I also mapped the water purification process and user needs to build a foundation for the design.',
+					zh: '这一页分析了现有湿地的问题，包括水质污染、生态退化和公众参与不足。我也整理了水净化流程和相关人群需求，为后续设计建立基础。'
+				},
+				{
+					en: 'Through field research, I observed water conditions, plants, and movement patterns across different areas. Water testing and site documentation helped me identify where purification, restoration, and spatial reorganization were needed.',
+					zh: '通过实地调研，我观察了不同区域的水体、植物和人流情况。水质测试和场地变化记录帮助我判断哪些地方需要净化、修复和重新组织。'
+				},
+				{
+					en: 'The ecosystem map and problem statement clarify the direction of the project: how wetlands can purify water while also becoming a public system that residents can understand and participate in.',
+					zh: '生态系统图和问题陈述把项目方向变得更清楚：如何让湿地既能净化水，也能成为城市居民可以理解和参与的公共系统。'
+				},
+				{
+					en: 'The new system layout combines greywater filtering, rainwater collection, plant-based purification, and pressure-generated electricity. The service blueprint shows how residents, technical systems, and maintenance teams work together.',
+					zh: '新的系统布局结合了灰水过滤、雨水收集、植物净化和压力发电。服务蓝图展示了居民、技术系统和维护人员之间如何协作。'
+				},
+				{
+					en: 'The final design combines modular wetland boxes, water purification facilities, and public landscape elements. It works as ecological infrastructure while allowing people to experience the water cycle more directly in daily life.',
+					zh: '最终设计把模块化湿地盒子、水净化设施和公共景观结合起来。它既是一个生态基础设施，也让人们在日常生活中更直接地感受到水循环。'
+				}
+			],
+			3: [
+				{
+					en: 'This project focuses on emotional support within families during pregnancy. Many pregnant women experience anxiety, loneliness, or communication difficulties, while partners may not always know how to participate meaningfully.',
+					zh: '这个项目关注孕期家庭中的情绪陪伴问题。很多孕妇在怀孕过程中会经历焦虑、孤独或沟通困难，而伴侣有时也不知道如何有效参与。'
+				},
+				{
+					en: 'Through data research, persona building, and pain point analysis, I found that pregnancy support is not only about reminders. It is more about emotional understanding, body awareness, and everyday interaction between partners.',
+					zh: '通过数据研究、用户画像和痛点分析，我发现孕期陪伴不只是信息提醒，更重要的是情绪理解、身体感知和双方之间的日常互动。'
+				},
+				{
+					en: 'The technology research focuses on smart fabric, AI systems, and pregnancy education. I wanted to use a wearable product to help partners feel physical changes more directly, instead of understanding pregnancy only through words.',
+					zh: '技术研究主要围绕智能织物、AI 系统和孕期教育展开。我希望通过可穿戴产品，让伴侣更直接地感受到孕妇的身体变化，而不是只通过语言理解。'
+				},
+				{
+					en: 'The product design includes 3D modeling, user activity flows, and a stakeholder map. Pregnant women, partners, doctors, and the platform form a support network that makes communication during pregnancy feel more natural.',
+					zh: '产品设计包含 3D 建模、用户活动流程和利益相关者地图。孕妇、伴侣、医生和平台之间形成一个支持网络，帮助孕期沟通变得更自然。'
+				},
+				{
+					en: 'The service blueprint shows the full experience from before use, through pregnancy, to after birth. The app flow records body data, emotional states, and interaction feedback, making support more continuous.',
+					zh: '服务蓝图展示了从使用前、怀孕期间到产后的完整体验。app 流程则负责记录身体数据、情绪状态和互动反馈，让支持更持续。'
+				},
+				{
+					en: 'The final interface uses a soft and approachable visual style, including character design, app screens, and a game interface. It turns pregnancy support into a lighter, more interactive everyday experience.',
+					zh: '最终界面使用柔和、亲近的视觉风格，包括角色形象、app 页面和小游戏界面。它把孕期陪伴变成一种更轻松、更有互动感的日常体验。'
+				}
+			],
+			4: [
+				{
+					en: 'This project explores the relationship between artificial intelligence, ecological networks, and algorithmic bias. I use “bug” as both insect and system error to question how technology shapes the way we look at nature.',
+					zh: '这个项目讨论人工智能、生态网络和算法偏见之间的关系。我把“bug”同时理解为昆虫和系统错误，用它来探索技术如何影响我们对自然的观看方式。'
+				},
+				{
+					en: 'The project background begins with computer vision and insect recognition, studying how algorithms classify, filter, and misread images. Insect images are reorganized by the system, and sometimes misclassified through that process.',
+					zh: '项目背景从计算机视觉和昆虫识别出发，研究算法如何分类、筛选和误读图像。不同的昆虫图像在系统里会被重新组织，也可能被错误地归类。'
+				},
+				{
+					en: 'This page further develops user attitudes, interaction methods, and the algorithm framework. The website does not simply display insects; it invites users to judge, select, and train, showing how bias can be produced.',
+					zh: '这一页进一步梳理了用户态度、交互方式和算法框架。网站不是单纯展示昆虫，而是让用户参与判断、选择和训练，从而看见偏见如何被生成。'
+				},
+				{
+					en: 'The design process starts with story scenarios and interaction sketches. As users enter the website, they observe, select, and influence insect data through an experimental interface, gradually realizing that their choices also change the system.',
+					zh: '设计过程从故事情境和交互草图开始。用户进入网站后，会在类似实验装置的界面中观察、选择和影响昆虫数据，逐渐意识到自己的选择也会改变系统结果。'
+				},
+				{
+					en: 'The experiment section includes data collection, insect image organization, model training, and Processing tests. Images are processed, generated, and distorted, creating a visual language between ecological samples and digital noise.',
+					zh: '实验部分包括数据收集、昆虫图像整理、模型训练和 Processing 测试。图像被不断处理、生成和扭曲，形成一种介于生态样本和数字噪声之间的视觉效果。'
+				},
+				{
+					en: 'The final outcome is a test website where users can interact with insect images and data visualizations. Through a green pixel-based visual style, the project presents organisms, errors, and bias inside an algorithmic system.',
+					zh: '最终成果是一个测试网站，用户可以通过互动影响昆虫图像和数据可视化。项目用绿色像素化视觉呈现算法系统中的生物、错误和偏见。'
+				}
+			]
+		};
+
+		const updateWatchBtn = () => {
+			if (!watchBtn) return;
+			const lang = getLanguage();
+			watchBtn.textContent = lang === 'zh' ? '点击观看' : 'Click to watch';
+		};
+
+		const updateFlipLabel = () => {
+			if (!youseeFlipLabel) return;
+			const lang = getLanguage();
+			youseeFlipLabel.textContent = lang === 'zh' ? '点击观看' : 'Click to watch';
+		};
+
+		const setWorkMode = (group) => {
+			if (group === 5) {
+				document.body.classList.add('work-five');
+				document.body.classList.remove('work-six');
+				if (carouselSection) {
+					carouselSection.querySelector('.carousel-wrapper')?.setAttribute('hidden', '');
+				}
+				if (materialitySection) {
+					materialitySection.hidden = false;
+					buildMaterialityGrid();
+				}
+				if (youseeSection) youseeSection.hidden = true;
+				if (watchBtnContainer) watchBtnContainer.hidden = true;
+				if (youseeLayout) youseeLayout.hidden = true;
+			} else if (group === 6) {
+				document.body.classList.add('work-six');
+				document.body.classList.remove('work-five', 'work-seven');
+				if (carouselSection) {
+					carouselSection.querySelector('.carousel-wrapper')?.setAttribute('hidden', '');
+				}
+				if (materialitySection) materialitySection.hidden = true;
+				if (youseeSection) youseeSection.hidden = true;
+				if (watchBtnContainer) watchBtnContainer.hidden = true;
+				if (youseeLayout) {
+					youseeLayout.hidden = false;
+					updateFlipLabel();
+				}
+				if (afterwordsLayout) afterwordsLayout.hidden = true;
+			} else if (group === 7) {
+				document.body.classList.add('work-seven');
+				document.body.classList.remove('work-five', 'work-six', 'work-eight');
+				if (carouselSection) carouselSection.querySelector('.carousel-wrapper')?.setAttribute('hidden', '');
+				if (materialitySection) materialitySection.hidden = true;
+				if (youseeSection) youseeSection.hidden = true;
+				if (watchBtnContainer) watchBtnContainer.hidden = true;
+				if (youseeLayout) youseeLayout.hidden = true;
+				if (afterwordsLayout) afterwordsLayout.hidden = false;
+				if (lcLayout) lcLayout.hidden = true;
+			} else if (group === 8) {
+				document.body.classList.add('work-eight');
+				document.body.classList.remove('work-five', 'work-six', 'work-seven');
+				if (carouselSection) carouselSection.querySelector('.carousel-wrapper')?.setAttribute('hidden', '');
+				if (materialitySection) materialitySection.hidden = true;
+				if (youseeSection) youseeSection.hidden = true;
+				if (watchBtnContainer) watchBtnContainer.hidden = true;
+				if (youseeLayout) youseeLayout.hidden = true;
+				if (afterwordsLayout) afterwordsLayout.hidden = true;
+				if (lcLayout) lcLayout.hidden = false;
+			} else {
+				document.body.classList.remove('work-five', 'work-six', 'work-seven', 'work-eight');
+				if (carouselSection) carouselSection.querySelector('.carousel-wrapper')?.removeAttribute('hidden');
+				if (materialitySection) materialitySection.hidden = true;
+				if (youseeSection) youseeSection.hidden = true;
+				if (watchBtnContainer) watchBtnContainer.hidden = true;
+				if (youseeLayout) youseeLayout.hidden = true;
+				if (afterwordsLayout) afterwordsLayout.hidden = true;
+				if (lcLayout) lcLayout.hidden = true;
+			}
+		};
+
+		const buildMaterialityGrid = () => {
+			if (!materialitySection) return;
+			const previewImg = document.querySelector('.materiality-preview-img');
+
+			materialitySection.innerHTML = materialitySeries.map((series) => {
+				const cards = series.items.map((item, index) => {
+					const displayIndex = index + 1;
+					const displayName = `${series.name}-${displayIndex}`;
+
+					return `
+					<button class="materiality-card" type="button" aria-pressed="false" aria-label="${displayName}" data-preview="${item}">
+						<span class="materiality-card-inner">
+							<span class="materiality-card-face materiality-card-front">
+								<span class="materiality-card-code">${series.name}</span>
+								<span class="materiality-card-series">${displayIndex}</span>
+							</span>
+							<span class="materiality-card-face materiality-card-back">
+								<img class="materiality-card-media" src="./videos/${item}.gif" alt="${item}">
+								<span class="materiality-card-caption">${displayName}</span>
+							</span>
+						</span>
+					</button>
+				`;
+				}).join('');
+
+				return `
+					<div class="materiality-series">
+						<div class="materiality-series-cards">${cards}</div>
+					</div>
+				`;
+			}).join('');
+
+			materialitySection.querySelectorAll('.materiality-card').forEach((card) => {
+				card.addEventListener('click', () => {
+					card.classList.add('is-locked');
+					card.setAttribute('aria-pressed', 'true');
+				});
+
+				card.addEventListener('mouseenter', () => {
+					if (previewImg) {
+						const previewFile = card.getAttribute('data-preview');
+						previewImg.src = `./videos/${previewFile}.gif`;
+					}
+				});
+			});
+		};
+
+		const updateWorkText = (group) => {
+			const language = getLanguage();
+			const data = workData[group][language];
+			
+			if (workTitle) workTitle.textContent = data.title;
+			if (workTags) workTags.textContent = data.tags;
+
+			if (group === 6) {
+				if (workCaption) {
+					workCaption.textContent = data.description;
+				}
+				updateWatchBtn();
+			} else if (group === 7) {
+				if (workCaption) workCaption.textContent = '';
+				if (afterwordsDescText) afterwordsDescText.textContent = data.description;
+			} else if (group === 8) {
+				if (workCaption) workCaption.textContent = '';
+				if (lcLayoutDesc) {
+					lcLayoutDesc.innerHTML = (data.descParts || []).map(p => `<p>${p}</p>`).join('');
+				}
+			} else {
+				const pageIndex = Math.max(0, Math.min(5, currentPosition - ((group - 1) * 6)));
+				const pageData = pageDescriptions[group]?.[pageIndex];
+				if (workCaption) {
+					workCaption.textContent = pageData ? pageData[language] : data.description;
+				}
+			}
+		};
+
+		function updatePosition(position) {
+			currentPosition = Math.max(0, Math.min(position, 27));
+			currentGroup = getGroupFromPosition(currentPosition);
+			currentIndex = Math.min(currentPosition, totalImages - 1);
+			slider.value = currentPosition;
+			setWorkMode(currentGroup);
+
+			if (currentGroup !== 5) {
+				const offset = -(currentIndex * 100);
+				carousel.style.transform = `translateX(${offset}%)`;
+			}
+
+			updateWorkText(currentGroup);
+		}
+
+		function showNext() {
+			updatePosition(currentPosition + 1);
+		}
+
+		function showPrev() {
+			updatePosition(currentPosition - 1);
+		}
+
+		prevBtn.addEventListener('click', showPrev);
+		nextBtn.addEventListener('click', showNext);
+		slider.addEventListener('input', (e) => {
+			updatePosition(parseInt(e.target.value, 10));
+		});
+
+		// Keyboard navigation
+		document.addEventListener('keydown', (e) => {
+			if (e.key === 'ArrowRight') showNext();
+			if (e.key === 'ArrowLeft') showPrev();
+		});
+
+		updatePosition(currentPosition);
+
+		const observer = new MutationObserver(() => {
+			updateWorkText(currentGroup);
+			if (currentGroup === 6) updateFlipLabel();
+		});
+
+		observer.observe(document.documentElement, {
+			attributes: true,
+			attributeFilter: ['data-lang']
+		});
+
+		// Lucky Claw slideshow
+		(function () {
+			const slides = document.querySelectorAll('.lc-slide');
+			const dots = document.querySelectorAll('.lc-dot');
+			if (!slides.length) return;
+			let current = 0;
+			let timer = null;
+
+			function goTo(index) {
+				slides[current].classList.remove('active');
+				dots[current].classList.remove('active');
+				current = (index + slides.length) % slides.length;
+				slides[current].classList.add('active');
+				dots[current].classList.add('active');
+			}
+
+			function startAuto() {
+				timer = setInterval(() => goTo(current + 1), 4000);
+			}
+
+			dots.forEach(dot => {
+				dot.addEventListener('click', () => {
+					clearInterval(timer);
+					goTo(parseInt(dot.dataset.dot));
+					startAuto();
+				});
+			});
+
+			startAuto();
+		})();
+	</script>
+</body>
+</html>
