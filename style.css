@@ -1926,3 +1926,123 @@ body[data-page="luckyclaw"] .site-topbar {
 		width: 100%;
 	}
 }
+
+/* ===== RESPONSIVE: Tablet ≤ 1080px (additions) ===== */
+@media (max-width: 1080px) {
+	.lc-layout {
+		padding: 0 60px;
+	}
+	.materiality-preview {
+		flex: 0 0 420px;
+		height: 320px;
+	}
+}
+
+/* ===== RESPONSIVE: Tablet ≤ 900px ===== */
+@media (max-width: 900px) {
+	.lc-layout {
+		padding: 0 20px;
+	}
+	.materiality-preview {
+		flex: 0 0 320px;
+		height: 240px;
+	}
+}
+
+/* ===== RESPONSIVE: Mobile ≤ 680px ===== */
+@media (max-width: 680px) {
+	/* works page — hide category lists, keep heading + back link */
+	.category-block {
+		display: none;
+	}
+	.panel-heading {
+		margin-bottom: 8px;
+	}
+	.side-panel .about-footer {
+		padding-top: 10px;
+	}
+
+	/* work card images shorter */
+	.work-visual-cover {
+		height: 180px;
+	}
+	.work-visual {
+		min-height: 180px;
+	}
+
+	/* carousel — taller aspect ratio on mobile */
+	.carousel-wrapper {
+		aspect-ratio: 1.6;
+	}
+
+	/* about portrait — full width */
+	.about-portrait {
+		max-width: 100%;
+	}
+
+	/* hero title */
+	.hero-title {
+		font-size: clamp(2.8rem, 14vw, 4.5rem);
+	}
+
+	/* workslib — lc-layout no padding */
+	.lc-layout {
+		padding: 0;
+	}
+	.lc-layout-hero {
+		aspect-ratio: 16 / 9;
+	}
+	.lc-layout-body {
+		flex-direction: column;
+	}
+	.lc-layout-sidebar {
+		width: 100%;
+	}
+
+	/* workslib — yousee stack */
+	.yousee-layout {
+		flex-direction: column;
+	}
+	.yousee-left {
+		flex: none;
+		min-height: 220px;
+	}
+	.yousee-right {
+		flex: none;
+		min-height: 240px;
+		width: 100%;
+	}
+
+	/* workslib — afterwords stack */
+	.afterwords-layout {
+		flex-direction: column;
+	}
+	.afterwords-card {
+		padding: 20px 18px 18px;
+	}
+	.afterwords-right {
+		flex: none;
+		min-height: 200px;
+	}
+
+	/* workslib — materiality stack */
+	.materiality-wrapper {
+		flex-direction: column;
+	}
+	.materiality-preview {
+		flex: none;
+		width: 100%;
+		height: 200px;
+	}
+
+	/* carousel controls */
+	.carousel-btn {
+		padding: 6px 10px;
+		font-size: 1.2rem;
+	}
+
+	/* about footer wrap */
+	.about-footer {
+		gap: 12px;
+	}
+}

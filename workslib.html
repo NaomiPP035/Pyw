@@ -607,6 +607,23 @@
 			attributeFilter: ['data-lang']
 		});
 
+		// Touch swipe for carousel
+		(function () {
+			const wrapper = document.querySelector('.carousel-section');
+			let startX = 0;
+			let startTime = 0;
+			wrapper.addEventListener('touchstart', (e) => {
+				startX = e.changedTouches[0].clientX;
+				startTime = Date.now();
+			}, { passive: true });
+			wrapper.addEventListener('touchend', (e) => {
+				const dx = e.changedTouches[0].clientX - startX;
+				if (Math.abs(dx) > 50 && Date.now() - startTime < 400) {
+					dx < 0 ? showNext() : showPrev();
+				}
+			}, { passive: true });
+		})();
+
 		// Lucky Claw slideshow
 		(function () {
 			const slides = document.querySelectorAll('.lc-slide');
