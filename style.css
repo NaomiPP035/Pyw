@@ -184,6 +184,21 @@ button {
 	transform: translateY(-1px);
 }
 
+.pill-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	background: rgb(254, 253, 207);
+	border: 1px solid rgba(21, 16, 24, 0.16);
+	border-radius: 999px;
+	padding: 8px 14px;
+	font-size: 0.9rem;
+	font-family: "MonnaSimpleAncientSeal", serif;
+	color: var(--text);
+	cursor: pointer;
+	box-shadow: 0 8px 20px rgba(255, 79, 158, 0.08);
+}
+
 .lang-toggle {
 	border: 1px solid rgba(21, 16, 24, 0.16);
 	background: rgba(255, 255, 255, 0.56);
@@ -332,7 +347,7 @@ button {
 }
 
 .panel-heading {
-	font-size: clamp(2.4rem, 4vw, 4.7rem);
+	font-size: clamp(2rem, 3.6vw, 3.8rem);
 	line-height: 0.95;
 	margin-bottom: 22px;
 }
@@ -1533,7 +1548,6 @@ body.work-six .carousel-wrapper {
    Work Card 8 — Lucky Claw
    ============================================ */
 .card-luckyclaw {
-	border: 1px solid #2a475e;
 }
 
 .card-luckyclaw .work-visual {
