@@ -67,7 +67,7 @@
 	const root = document.documentElement;
 	const toggleButtons = document.querySelectorAll("[data-lang-toggle]");
 
-	const normalizeLanguage = (value) => (value === "zh" ? "zh" : "en");
+	const normalizeLanguage = (value) => (value === "en" ? "en" : "zh");
 
 	const applyLanguage = (language, force = false) => {
 		const nextLanguage = normalizeLanguage(language);
